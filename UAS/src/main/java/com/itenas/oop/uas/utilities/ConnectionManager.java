@@ -14,6 +14,12 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class ConnectionManager {
     private String DB_URL = "jdbc:mysql://localhost:3306/laundry";
     private String username;
@@ -61,4 +67,3 @@ public class ConnectionManager {
         return connection;
     }
 }
-
