@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.itenas.oop.uas.repository;
 
-/**
- *
- * @author renet
- */
-public interface AkunRepository {
-    
+import java.util.List;
+
+public interface AkunRepository<T, ID> {
+    T login(String username, String password);
+    List<T> findAll();
+    ID create(T object);
+    ID update(T object);
+    T findById(int id);
+    ID delete(int id);
 }
+
