@@ -12,7 +12,7 @@ import com.itenas.oop.uas.repository.CrudRepository;
  *
  * @author ASUS
  */
-public interface TransaksiService extends CrudRepository<Object, Object>{
+public interface TransaksiService extends CrudRepository<Transaksi, Integer>{
     public int hargaCucian(OrderQuantity orderQuantity, int harga);
     public int totalHarga(Transaksi transaksi);
     public int getTransaksiCount();

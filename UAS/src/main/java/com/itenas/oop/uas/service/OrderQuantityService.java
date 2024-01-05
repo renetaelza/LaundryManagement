@@ -4,12 +4,13 @@
  */
 package com.itenas.oop.uas.service;
 
+import com.itenas.oop.uas.pojo.OrderQuantity;
 import com.itenas.oop.uas.repository.CrudRepository;
 
 /**
  *
  * @author ASUS
  */
-public interface OrderQuantityService extends CrudRepository<Object, Object>{
+public interface OrderQuantityService extends CrudRepository<OrderQuantity, Integer>{
     
 }

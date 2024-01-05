@@ -4,12 +4,13 @@
  */
 package com.itenas.oop.uas.service;
 
+import com.itenas.oop.uas.pojo.Delivery;
 import com.itenas.oop.uas.repository.CrudRepository;
 
 /**
  *
  * @author ASUS
  */
-public interface DeliveryService extends CrudRepository<Object, Object>{
+public interface DeliveryService extends CrudRepository<Delivery, Integer>{
     public int getDeliveryCount();
 }

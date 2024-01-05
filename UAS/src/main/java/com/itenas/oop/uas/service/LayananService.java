@@ -11,6 +11,6 @@ import com.itenas.oop.uas.repository.CrudRepository;
  *
  * @author ASUS
  */
-public interface LayananService extends CrudRepository<Object, Object>{
+public interface LayananService extends CrudRepository<Layanan, Integer>{
     public Layanan findByName(String namaLayanan);
 }

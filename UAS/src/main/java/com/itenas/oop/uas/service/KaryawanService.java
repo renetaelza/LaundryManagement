@@ -4,10 +4,13 @@
  */
 package com.itenas.oop.uas.service;
 
+import com.itenas.oop.uas.pojo.Karyawan;
+import com.itenas.oop.uas.repository.CrudRepository;
+
 /**
  *
  * @author ASUS
  */
-public interface KaryawanService {
+public interface KaryawanService extends CrudRepository<Karyawan, Integer>{
     
 }

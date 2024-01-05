@@ -4,10 +4,15 @@
  */
 package com.itenas.oop.uas.service;
 
+import com.itenas.oop.uas.pojo.Admin;
+import com.itenas.oop.uas.repository.AkunRepository;
+
 /**
  *
  * @author renet
  */
-public interface AdminService {
-    
+public interface AdminService extends AkunRepository<Admin, Integer> {
+    public boolean register(Admin admin);
+
+    public boolean isUsernameExists(String username);
 }
