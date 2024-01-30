@@ -39,6 +39,10 @@ B. FEATURES
 7. CRUD Operations for Delivery Data, consists of pelanggan's data that registered for delivery.
 
 
+C. USAGE
+1. Run the dashboard Swing interface located in the swing package.
+2. Follow the prompts for login or registration.
+3. Once authenticated, access the program's functionalities from the menus.
 
 
 
